@@ -1,14 +1,17 @@
-nclude <stdio.h>
-#include <stdio.h>
+#include "main.h"
+
 /**
- * _strlen - a function that returns the length of a string
- * @s: string whose length is being returned
- * Return: length of s
+ * _puts - Prints a string
+ * @str: The string to print
+ * Return: void
  */
-size_t _strlen(const char *s)
+
+void _puts(char *str)
+
 {
-	size_t length = 0;
-	while (*s++)
-		length++;
-	return (length);
+	for (; *str != '\0'; str++)
+	{
+		_putchar(*str);
+	}
+	_putchar('\n');
 }
